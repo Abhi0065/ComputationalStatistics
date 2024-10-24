@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Computational Statistics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="offline-mess">
+    <h2>App network is disable </h2>
+    <img src="./img/offline.png" alt="offline">
+    <p id="error">Looks like app network permission is disable.</p>
+    <button onclick="openSettings()">Enable Network Permission</button>
+</div>
+<div id="message"></div>
+<script type="text/javascript">
+    function openSettings() {
+        Android.openAppInfo();
+    }
+   setTimeout(()=> openSettings(), 500);
+</script>
+</body>
+</html>

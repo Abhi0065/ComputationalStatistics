@@ -1,0 +1,72 @@
+        * {
+          margin: 0;
+          padding: 0;
+          -webkit-tap-highlight-color: transparent;
+          touch-action: manipulation;
+          overflow: hidden;
+        }
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+          color: #333;
+          width: 100%;
+          height: 100vh;
+          text-align: center;
+          user-select: none;
+        }
+        .offline-mess {
+          padding: 20px;
+          margin-top: 5rem;
+        }
+        .offline-mess h2 {
+          color: red;
+          font-size: 26px;
+        }
+        .offline-mess #error {
+           color: #555555;
+           font-size: 19px;
+           padding: 5px;
+           font-weight: bold;
+        }
+
+        .offline-mess #retrying {
+          color: #555555;
+          font-size: 16px;
+          padding: 5px;
+        }
+
+        img{
+          width:150px;
+          height: 150px
+        }
+        .offline-mess button {
+          background-color: #20a1e6;
+          color: white;
+          border: none;
+          margin-top: 2rem;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+
+        .offline-mess button:active {
+          background-color: #3481d7;
+        }
+
+        #message {
+          width: 100%;
+          height: 30px;
+          position: fixed;
+          top: -30px;
+          transition: top 0.5s ease, opacity 0.5s ease;
+          opacity: 0;
+          z-index: 10;
+        }
+        #message p {
+          text-align: center;
+          line-height: 33px;
+          color: white;
+          font-size: 16px;
+          letter-spacing: 0.02rem;
+        }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Computational Statistics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="offline-mess">
+    <h2>You are offline</h2>
+    <img src="./img/offline.png" alt="offline">
+    <p id="error">Please check your internet connection.</p>
+    <p id="retrying">retrying connection... 0</p>
+    <button onclick="openSettings()">Go to Network Settings</button>
+</div>
+<div id="message"></div>
+<script type="text/javascript">
+    function openSettings() {
+        Android.openNetworkSettings();
+    }
+</script>
+<script src="./script.js"></script>
+</body>
+</html>

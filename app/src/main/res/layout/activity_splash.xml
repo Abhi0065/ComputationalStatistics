@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="180dp"
+        android:background="#00FFFFFF"
+        android:padding="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/splash_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-15dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="                          ~  Dr. Ajay Kumar"
+        android:textColor="#FFFDFD"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="Computational Statistics"
+        android:textColor="#FFFDFD"
+        android:textSize="21sp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="#00FFFFFF"
+        android:indeterminate="true"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progress="0" />
+</LinearLayout>
