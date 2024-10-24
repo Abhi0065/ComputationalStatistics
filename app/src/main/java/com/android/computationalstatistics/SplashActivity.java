@@ -1,4 +1,4 @@
-package com.android.computationalstatistics;
+package com.example.com;
 
 import android.content.Intent;
 import android.graphics.Color;
