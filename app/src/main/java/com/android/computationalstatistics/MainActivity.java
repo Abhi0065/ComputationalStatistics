@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
             webView.goBack();
         } else {
             AlertDialog alertDialog = new AlertDialog.Builder(this)
-                    .setTitle("Exit CompStat")
+                    .setTitle("!Exit CompStat")
                     .setMessage("Do you want to exit the app? Please confirm your action.")
                     .setPositiveButton("STAY", (dialog, which) -> dialog.dismiss())
                     .setNegativeButton("EXIT", (dialog, which) -> finish())
@@ -402,7 +402,7 @@ public class MainActivity extends AppCompatActivity {
 
                 "if (document.querySelector('.JzO0Vc')) {\n" +
                 "   const appVersion = document.createElement('div');\n" +
-                "   appVersion.innerText = 'App version: v1.5.81';\n" +
+                "   appVersion.innerText = 'App version: v1.0.50';\n" +
                 "   appVersion.style.cssText = 'color: #f5f5f5; position: absolute; bottom: 30px; left: 45px; line-height: 25px; font-size: 12px; font-weight: lighter;';\n" +
                 "   document.querySelector('.JzO0Vc').appendChild(appVersion);\n" +
                 "}\n" +
